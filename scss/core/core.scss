@@ -1,0 +1,36 @@
+* {
+    outline: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1080px;
+    // width: 100% !important;
+}
+
+body {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

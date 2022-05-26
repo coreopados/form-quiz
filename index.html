@@ -1,0 +1,246 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Form</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+  <!-- include libraries(jQuery, bootstrap) -->
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+  <!-- include summernote css/js -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="css/jq-ui.css">
+
+  <link rel="stylesheet" href="css/form.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+
+  <header></header>
+
+  <div class="container">
+
+    <div class="form-wrap">
+      <form action="">
+        <div class="form-block ask1 active">
+          <div class="left-col">
+            <h1>A great time
+              to plan your
+              concert! </h1>
+            <p class="subtitle">Start your concert crowdfunding campaign to see and enhance current demand for your
+              show.</p>
+            <div class="steps-wrap">
+              <div class="step step-1 active">1</div>
+              <div class="step step-2">2</div>
+              <div class="step step-3">3</div>
+            </div>
+            <p><a href="#">General Information</a></p>
+          </div>
+          <div class="right-col">
+            <div class="question question1">
+              <h4>1. What type of event would you like to host?</h4>
+              <input type="radio" id='answer1-1' name="question1"><label for="answer1-1">Just a regular
+                concert</label>
+              <input type="radio" id='answer1-2' name="question1"><label for="answer1-2">Life session </label>
+              <input type="radio" id='answer1-3' name="question1"><label for="answer1-3">Something
+                else</label>
+            </div>
+
+            <div class="question question2">
+              <h4>2. Location of your concert</h4>
+              <input type="radio" id='answer2-1' name="question2"><label for="answer2-1">Venue</label>
+              <input type="radio" id='answer2-2' name="question2"><label for="answer2-2">Online event</label>
+              <input type="radio" id='answer2-3' name="question2"><label for="answer2-3">I would like to
+                announce
+                later</label>
+            </div>
+
+            <div class="question question3">
+              <h4>3. Enter the name of your event</h4>
+              <input type="text" id='answer3-1' name="question-3">
+
+            </div>
+
+            <p class="error-alert">Please, Answer all questions</p>
+
+            <button class="next-step" data-step='1'>Next step
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Capa_1" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;"
+                xml:space="preserve" width="10">
+                <path style="fill:#FF5CE3;"
+                  d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" />
+              </svg></button>
+          </div>
+        </div>
+
+        <div class="form-block ask2">
+          <div class="left-col">
+            <h1>A great time
+              to plan your
+              concert! </h1>
+            <p class="subtitle">Start your concert crowdfunding campaign to see and enhance current demand for your
+              show.</p>
+            <div class="steps-wrap">
+              <div class="step step-1 ">1</div>
+              <div class="step step-2 active">2</div>
+              <div class="step step-3 ">3</div>
+            </div>
+            <p><a href="#">Some more details</a></p>
+          </div>
+          <div class="right-col">
+
+            <div class="question question-4">
+              <h4>4. Enter a description</h4>
+
+              <div class="buttons">
+                <a href="#">Add Soundcloud</a>
+                <a href="#">Add Media</a>
+              </div>
+              <textarea id="summernote" name="editordata"></textarea>
+            </div>
+
+            <div class="question question-5">
+              <h4>5. And your summary</h4>
+              <textarea name="question-5" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="question question-6">
+              <h4>6. Specify date and time</h4>
+
+
+              <div class="field-date">
+                <label for="">
+                  Event Starts
+                  <input id="eventStartDate" data-date="datepicker" type="text" placeholder="11/07/2020">
+                </label>
+                <label for="">
+                  Start Time
+                  <input id="eventStartTime" type="text" placeholder="07:00 PM">
+                </label>
+                <label for="">
+                  Event Ends
+                  <input id="eventEndDate" data-date="datepicker" type="text" placeholder="11/07/2020">
+                </label>
+                <label for="">
+                  End Time
+                  <input id="eventEndTime" type="text" placeholder="09:00 PM">
+                </label>
+              </div>
+
+            </div>
+
+            <div class="question question-7">
+              <h4>7. Main image</h4>
+              <label class="form-control-label">
+                <input class="form-control" type="file" name="data[file]" placeholder="Прикрепите файл"
+                  style="display: none;">
+                <span class="js-labelFile">
+                  <span class="js-fileName">Upload</span>
+                </span>
+              </label>
+            </div>
+
+
+
+
+            <div class="question question-8">
+              <h4>8. Link to your YouTube video.</h4>
+              <input type="text" id='answer8-1' name="question-8">
+
+            </div>
+
+
+            <button class="next-step" data-step='2'>Next step
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Capa_1" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;"
+                xml:space="preserve" width="10">
+                <path style="fill:#FF5CE3;"
+                  d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-block ask3">
+          <div class="left-col">
+            <h1>A great time
+              to plan your
+              concert! </h1>
+            <p class="subtitle">Start your concert crowdfunding campaign to see and enhance current demand for your
+              show.</p>
+            <div class="steps-wrap">
+              <div class="step step-1">1</div>
+              <div class="step step-2">2</div>
+              <div class="step step-3 active">3</div>
+            </div>
+            <p><a href="#">Crowdfunding options</a></p>
+          </div>
+          <div class="right-col">
+
+            <div class="question question-9">
+              <h4>9. Link to your YouTube video.</h4>
+              <label for="">
+                <input type="range" min="0" max="3000">
+                <span class="min-val">300$</span>
+                <span class="max-val">3000$</span>
+              </label>
+
+            </div>
+
+            <div class="question question-10">
+              <h4>10. This campaign launch date</h4>
+
+              <div class="field-date">
+                <label for="">
+                  Event Starts
+                  <input id="eventStartDate" type="text" data-date="datepicker" placeholder="11/07/2020">
+                </label>
+              </div>
+
+            </div>
+
+            <div class="question question-11">
+              <h4>11. Create tickets</h4>
+              <label for="answer11-1">
+                Amount, USD
+                <input type="text" id='answer11-1' name="question-11">
+              </label>
+              <label for="answer11-1">
+                Name this ticket category
+                <input type="text" id='answer12-1' name="question-12">
+              </label>
+
+              <p>
+                <a href="#" class="add_more">+ Add more ticket options for your fans </a>
+              </p>
+
+
+            </div>
+
+            <button type="submit">Launch!</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
